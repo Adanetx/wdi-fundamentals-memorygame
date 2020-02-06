@@ -3,7 +3,7 @@ body{
 	margin: 0 auto;
 }
 h1{
-	font-family: raleway;
+	font-family: RALEWAY;
 	color: #0D2C40;
 	letter-spacing: 1px;
 	font-weight: 400;
@@ -30,8 +30,7 @@ line-height: 26px;
 font-size: 18px;
 }
 header{
-	background-color: #F15831;
-	color: #FFFFFF;
+	background-color: #F15B31;
 	padding: 30px 20px;
 }
 nav{
