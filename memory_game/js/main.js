@@ -34,7 +34,8 @@ function flipcard(cardId){
   console.log(cards[cardId].suit);
   cardsInPlay.push(cards[cardId].cardImage);
   cardsInPlay.push(cards[cardId].suit);
-}
+  checkForMatch();
+ }
 flipcard(0);
 flipcard(2);
- checkForMatch();
+ 
