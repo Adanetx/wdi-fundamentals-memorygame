@@ -20,14 +20,17 @@ const cards = [
         cardImage: "images/king-of-diamonds.png"
       }];
 const cardsInPlay = [];
-function checkForMatch() {
+function checkForMatch() { this.setAttribute('src', card[id].cardImage)
+if(cardsInPlay.length===2){
+   this.setAttribute('src', card[id].cardImage)
   if (cardsInPlay[0] === cardsInPlay[1]) {
     console.log("You found a match!");
 } else {
   console.log("Sorry, try again.");
 }
- }
-function flipcard(cardId){
+ }}
+function flipcard(){
+   let cardId = this.getAttribite('src', cards[id]cardImage);
   console.log("User flipped"+" "+cards[cardId].rank );
   cardsInPlay.push(cards[cardId].rank);
   console.log(cards[cardId].cardImage);
@@ -36,6 +39,10 @@ function flipcard(cardId){
   cardsInPlay.push(cards[cardId].suit);
   checkForMatch();
  }
-flipcard(0);
-flipcard(2);
- 
+ funcition createBoard(){
+   for(let i = 0; i < cards.length; i++)
+     let cardElement = document.createElement('img');
+     cardElement.setAttribute('src', "images/bank.png");
+  cardElement.setAttribute('id', i);
+   cardElement.addEventListner('click', flipcard);
+   documement.getElementById('game-board').appendChild(cardElement);
